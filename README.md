@@ -6,6 +6,9 @@
 因为想要提升自己的vue能力去网上找项目做，一看这么多人弄过音乐就想尝试一下，找了一个不错的案例去模仿[地址](https://github.com/webfansplz/xcMusic)
 
 ##API[来源](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
+```
+这个api是要在本地挂载的切记！！！
+```
 
 ##技术栈
 
