@@ -45,13 +45,13 @@ vue2.0 + vuex + vue-router2.0 + es6 + axios + vux +element-ui + vue-lazyload
 -   排行榜功能(云音乐官方版)
 
 ### 展示图
-![个性推荐](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_one.png)  
-![排行榜](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_two.png)  
-![搜索](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_tree.png)  
-![飙升榜](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_seven.png)  
-![歌单](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_four.png)  
-![播放器](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_five.png)  
-![播放器2](https://github.com/Mr-China-Chester/vue_music/tree/master/src/assets/imgs/music_six.png)  
+![个性推荐](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_one.png)  
+![排行榜](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_two.png)  
+![搜索](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_tree.png)  
+![飙升榜](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_seven.png)  
+![歌单](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_four.png)  
+![播放器](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_five.png)  
+![播放器2](https://github.com/Mr-China-Chester/vue_music/blob/master/src/assets/imgs/music_six.png)  
 
 
 
