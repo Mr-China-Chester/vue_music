@@ -10,9 +10,7 @@
 export default {
   name:"bottom",
   data(){
-    return{
-      // show:false
-    }
+    return{}
   },
   computed:{
     MusicID(){
@@ -22,19 +20,13 @@ export default {
       return this.$store.state.playSongs.OFBottom;
     }
   },
-  // watch:{
-  //   "$route":"Changes"
-  // },
   methods:{
     GoBack(){
-      //console.log(this.$router.currentRoute.name);
       if(this.$router.currentRoute.name == 'gexin'){
         this.$store.commit('set_ThisSongID',false)
       }else{
         this.$store.commit('set_ThisSongID',this.$router.currentRoute.name)
       }
-      //let Songid =
-      //this.$store.commit('set_ThisSongID',)
       this.$router.push({
         name:'SongDetails',
         params:{
@@ -42,14 +34,6 @@ export default {
         }
       })
     },
-    // Changes(){
-    //   let canan = this.$route.path.split("/")[1];
-    //   if(canan =='SongDetails'){
-    //     this.show=false;
-    //   }else{
-    //     this.show=true;
-    //   }
-    // }
   }
 }
 </script>

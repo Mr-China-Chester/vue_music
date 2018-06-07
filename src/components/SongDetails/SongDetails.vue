@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="SongDetails_back_Singer">
-        <h2 class="SongDetails_back_Singer_h2" @click="ceshi">
+        <h2 class="SongDetails_back_Singer_h2">
           <span class="SongDetails_back_Singer_name">{{songDetails.songs[0].name + '-'}}</span>
           <span class="SongDetails_back_Singer_gap">{{songDetails.songs[0].ar[0].name}}</span>
         </h2>
@@ -40,9 +40,6 @@
       </div>
     </div>
     <el-dialog title="歌曲列表" :visible.sync="ThisListOpen">
-      <!-- <el-table :data="gridData">
-
-      </el-table> -->
       <ul class="SongDetails_Bottom">
         <div class="SongDetails_Bottom_not" v-if="songListDetails.length== 0">
           没有音乐呢
@@ -88,12 +85,6 @@ export default {
         musicCurtime: state => state.playSongs.musicCurtime,
         //歌曲详情
         songDetails:state=>state.playSongs.songDetails,
-        //歌词
-        //Lyric:state=>state.playSongs.Lyric,
-        //音乐URl
-        //musicUrl:state=>state.playSongs.musicUrl,
-        //播放器列表是否打开
-        //ThisListOpen:state=> state.playSongs.ThisListOpen,
         //获取歌单
         songListDetails:state=>state.songListDetails.tracks,
     }),
@@ -107,12 +98,6 @@ export default {
       return this.$store.state.playSongs.musicUrl;
     },
   },
-  // beforeUpdate(){
-  //   debugger
-  //   if(this.musicUrl == null){
-  //     console.log("a");
-  //   }
-  // },
   methods:{
     showchangechildren(data){
       this.ThisListOpen = data
@@ -120,8 +105,6 @@ export default {
     ReturnGo(){
       //返回的时候打开底部的音乐按钮
       this.$store.commit('set_OFBottom',true);
-      // debugger
-      // this.$root.$el.children[4].style.display='block';
       let PDSss = this.ThisSongid
       if(PDSss == false){
         this.$router.push({
@@ -148,17 +131,6 @@ export default {
         })
       }
     },
-    ceshi(){
-      // this.$notify({
-      //   title: 'It Works',
-      //   message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
-      //   duration: 6000
-      // })
-      //this.$message.error('此音乐是付费歌曲呢，不能给你听哦');
-      // var Main = {this.$message.error('错了哦，这是一条错误消息');  }
-      // var Ctor = Vue.extend(Main)
-      // new Ctor().$mount('#app')
-    }
   },
   watch:{
     //监听 musicUrl 因为有些歌曲musicUrl为null
@@ -166,21 +138,11 @@ export default {
       if(this.musicUrl == 'Null' || this.musicUrl == 'Nulls'){
         this.$message.error('此音乐是付费歌曲呢，不能给你听哦');
         this.$router.go(-1);
-        // setTimeout(function (){
-        //     this.$router.go(-1);
-        // }, 1000);
       }
     }
   },
 }
 </script>
-<!-- this.$router.push({
-  name:'SongListDetail',
-    id:PDSss,
-    不能直接跳转输入id 会出现跳转bug
-}) -->
-<!-- transition: transform .3s ease-out,-webkit-transform .3s ease-out;
-transform: translateY(-300px); -->
 <style lang="css">
 .SongDetails_Bottom_not{
   text-align: center;

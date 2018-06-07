@@ -21,7 +21,6 @@
               </div>
               <div class="RankingList_GeQu_Connent_Bottom">
                 <p class="RankingList_GeQu_Connent_Bottom_1">{{item.ar[0].name+'-'+item.al.name}}</p>
-                <!-- <span class="SongListDetail_Two_GeQu_Connent_Bottom_2">{{item.album.name}}</span> -->
               </div>
             </div>
             <div class="RankingList_bofang">

@@ -22,12 +22,6 @@
       <a  :class="{'send':isDisabled===3}">搜索</a>
     </div>
   </div>
-  <!-- <tab :line-width="2" :custom-bar-width="getBarWidth" bar-active-color="#f33" active-color='#f33' class="tabNaver">
-        <tab-item @on-item-click="skipPage" :selected="tabIndex ==0">个性推荐</tab-item>
-        <tab-item @on-item-click="skipPage" :selected="tabIndex == 1">歌单</tab-item>
-        <tab-item @on-item-click="skipPage" :selected="tabIndex == 3">排行榜</tab-item>
-      </tab> -->
-
 </div>
 </template>
 
@@ -98,9 +92,6 @@ export default {
   border-bottom: 1px solid rgba(0,0,0,.1);
    width: 100%;
    height: 39px;
-   /* position: absolute;
- background: #fff;
- z-index: 10; */
 }
 .qiehuan .toubu_red{
 float: left;

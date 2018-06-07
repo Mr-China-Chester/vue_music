@@ -22,7 +22,6 @@
         <div class="gexin_newsong_div_left">
           <div class="gexin_newsong_div_left_top">
             {{item.name}}
-            <!-- <p>{{item.name}}</p> -->
             <span>{{item.song.alias[0] || ""}}</span>
           </div>
           <div class="gexin_newsong_div_left_bottom">
@@ -35,8 +34,6 @@
           </div>
         </div>
       </div>
-      <!-- <p>{{item.name}}</p>
-      <span>{{item.song.alias[0] || ""}}</span> -->
     </router-link>
   </ul>
   <div class="gexin_happy">
@@ -59,10 +56,6 @@ export default {
       //页面初始化
       this.$store.dispatch('initRecommendPage');
   },
-  // mounted(){
-  //   debugger
-  //   console.log(this.PrSongList)
-  // },
   computed:{
     ...mapState({
       PrSongList: state => state.recommend.PrSongList, //获取xuex的store文件里面的index文件中找PrSongList定义的文件的PrSongList函数获取
@@ -75,12 +68,6 @@ export default {
     }
   }
 }
-// this.$axios.get(`http://rapapi.org/mockjs/21575/index`).then((response) => {
-//    console.log(response)
-//   }, (error) => {
-//     // error
-//     console.log(error)
-//   });
 </script>
 
 <style lang="css">

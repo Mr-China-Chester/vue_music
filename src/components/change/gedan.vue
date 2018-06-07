@@ -9,10 +9,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in MusicUpTopList.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -23,10 +19,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in MusicNewgebang.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -37,10 +29,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in Musicyuanchuangbang.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -51,10 +39,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in Musicergebnag.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -65,10 +49,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in Musicdianying.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -79,10 +59,6 @@
       <div class="paihangbang_all">
         <router-link v-for="(item,i) in MusicKTV.tracks" v-if='i<=2' :key="i" tag="li" :to="{ name: '', params: {} }">
           <div class="paihangbang_all_right">
-            <!-- <span>{{i+'.'}}</span>
-            <p>{{item.name}}</p>
-            <p>-</p>
-            <p>{{item.ar[0].name}}</p> -->
             <p>{{i+1+"."+item.name+'-'+item.ar[0].name}}</p>
           </div>
         </router-link>
@@ -193,15 +169,14 @@ export default {
 }
 .paihangbang_all_right > span{
   float: left;
-      line-height: 26px;
-      color: rgb(121, 121, 121);
+  line-height: 26px;
+  color: rgb(121, 121, 121);
 }
 .paihangbang_all_right >p{
   float: left;
   color: rgb(105,105,105);
   padding:0 4px 0 0;
   line-height: 26px;
-  /* text-align: -webkit-center; */
 display: -webkit-box;
 -webkit-line-clamp: 1;
 -webkit-box-orient: vertical;

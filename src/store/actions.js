@@ -57,13 +57,6 @@ export default{
     context.commit('set_store_SongListDetails',res.data.result);
     context.commit('update_Loding', false);
   },
-
-  //
-  // async AllSearch(context,payload){
-  //   context.dispatch('get_ThisSearch',payload);
-  //   context.dispatch('get_ThisSearchSinger',payload);
-  //   context.dispatch('get_ThisSearchPlaylist',payload);
-  // },
   // 搜索
   async get_ThisSearch(context,payload){
 

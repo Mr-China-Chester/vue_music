@@ -18,7 +18,7 @@
       <div class="SongListDetail_Top_first_2_All_Q_1">
         <div class="SongListDetail_Top_first_2_All_Q_1_img" :style="{backgroundImage: 'url('+ songListDetails.creator.avatarUrl +')'}"><!--songListDetailsTwo.avatarUrl-->
         </div>
-        <span>{{songListDetails.creator.nickname}}</span><!--songListDetails.creator.nickname-->
+        <span>{{songListDetails.creator.nickname}}</span>
         <ul class="SongListDetail_Top_ul">标签：
           <router-link v-for="(item,i) in songListDetails.tags" :key="i" tag="li" :to="{ name: '', params: {} }">
             <p>{{item}}</p>
@@ -46,12 +46,10 @@
         </div>
         <div class="SongListDetail_Two_GeQu_Connent_Bottom">
           <p class="SongListDetail_Two_GeQu_Connent_Bottom_1">{{item.artists[0].name+'-'+item.album.name}}</p>
-          <!-- <span class="SongListDetail_Two_GeQu_Connent_Bottom_2">{{item.album.name}}</span> -->
         </div>
       </div>
       <div class="SongListDetail_Two_GeQu_bofang">
         <div class="SongListDetail_Two_GeQu_bofang_img">
-
         </div>
       </div>
     </div>
@@ -102,9 +100,6 @@ export default {
   },
   methods:{
     FHSYe(){
-      // this.$router.push({
-      //   name:'gexin'
-      // })
       this.$router.go(-1)
     }
   }
@@ -113,21 +108,18 @@ export default {
 
 <style lang="css">
 .SongListDetail_Two_GeQu_bofang_img{
-  /* background-image: url(/static/img/bofang.49a82fe.png); */
   background-image: url(../../assets/bofang.png);
-      float: left;
-      /* background-size: contain; */
-      width: 22px;
-      height: 22px;
-      background-position: -24px 0;
-      background-size: 166px 97px;
-      /* padding: 0 10px; */
-      margin: 17px 10px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  background-position: -24px 0;
+  background-size: 166px 97px;
+  margin: 17px 10px;
 }
 .SongListDetail_Two_GeQu_bofang{
   float: right;
-    width: 42px;
-    height: 100%;
+  width: 42px;
+  height: 100%;
 }
 .SongListDetail_Two_GeQu_Connent{
   float: left;
@@ -201,7 +193,6 @@ export default {
   margin-right: 5px;
   padding: 1px 8px;
   font-size: 12px;
-  /* border: 1px solid rgba(0,0,0,.1); */
   border-radius: 20%;
 }
 .SongListDetail_Top_first_2_All_Q_1 span{
@@ -245,15 +236,11 @@ float: left;
 width: 100%;
 height: 100%;
 background-size: 100%;
-    /* border: 1px solid rgb(245,246,247); */
     border-radius: 5px;
 }
 .SongListDetail_Top_first_2_All{
   width: 100%;
   height: 150px;
-  /* top: 10px; */
-  /* margin-top: 80px; */
-  /* float: left; */
   top: 70px;
   position: absolute;
 }
@@ -265,8 +252,7 @@ background-size: 100%;
   background-position: 50%;
   -webkit-filter: blur(20px);
   filter: blur(50px);
-  /* -webkit-transform: scale(1.5); */
-  /* transform: scale(1.5); */
+
 }
 .SongListDetail_Top_first_1 span{
   font-size: 16px;
@@ -279,8 +265,6 @@ background-size: 100%;
 .SongListDetail_Top_first_1{
   width: 100%;
   height: 50px;
-  /* background: #fff; */
-  /* opacity: 0.2; */
   position: fixed;
   z-index: 10;
   color: #fff;

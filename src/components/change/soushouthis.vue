@@ -107,15 +107,6 @@ export default {
       //搜索出的 歌单
       ThisSearchPlaylist:state=>state.ThisSearchPlaylist,
     }),
-    // ThisSearch(){
-    //   return this.$store.state.ThisSearch
-    // },
-    // ThisSearchSinger(){
-    //   return this.$store.state.ThisSearchSinger
-    // },
-    // ThisSearchPlaylist(){
-    //   return this.$store.state.ThisSearchPlaylist
-    // },
   },
   methods:{
     TopSearch(vlue){
@@ -128,15 +119,12 @@ export default {
     },
     CThisSearch(data){
       this.$store.commit('set_ThisSongID','soushou');
-      // 把歌单替换
-      //this.$store.commit('set_store_SongListDetails',data);
-      //this.$store.commit('set_store_SongListDetails',"");
     },
     ThisSinger(){
       this.$message("该功能并未开发")
     },
     Playlist(){
-      
+
     }
   },
   watch:{
@@ -162,8 +150,6 @@ export default {
           }else{
             this.change = false;
           }
-
-            // alert(this.$refs.type.value);
         },
         deep: true
     },

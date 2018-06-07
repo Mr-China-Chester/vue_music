@@ -23,11 +23,6 @@ export default new Router({
       name: 'gedang',
       component: gedang
     },
-    // {
-    //   path: '/gexin',
-    //   name: 'gexin',
-    //   component: gexin
-    // },
     {
       path: '/soushou',
       name: 'soushou',
